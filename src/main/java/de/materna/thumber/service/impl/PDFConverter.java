@@ -26,6 +26,7 @@ public class PDFConverter implements ThumbnailConverter {
         PDDocument document = Loader.loadPDF(pdfInput);
 
         PDFRenderer pdfRenderer = new PDFRenderer(document);
+        // Das ist nicht mega Perfekt... Aber soll zeigen, dass man das auch ausbauen kann. Klar. 
         for (int page = 0; page < document.getNumberOfPages(); ++page) {
             BufferedImage renderImageWithDPI = pdfRenderer.renderImageWithDPI(page, 300, ImageType.RGB);
             document.close();
