@@ -26,7 +26,7 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
-#Usage
+# Usage
 
 Start the application e.g. with bootRun Task from gradle.
 
